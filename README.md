@@ -24,23 +24,16 @@ Revisión eléctrica y de firmware del prototipo. **El sistema NO es apto para o
 
 | Pin | Función | Condición |
 |-----|---------|-----------|
-| D2 | HC-SR04 TRIG | Directo. |
-| D3 | HC-SR04 ECHO | 1 kΩ serie opcional; 100 pF a GND si el cable es largo. |
-| D4 | DS18B20 DATA | Pull-up 4,7 kΩ a 5 V. |
-| D5 | Relé IN | 10 kΩ a 5 V si es activo bajo; a GND si es activo alto. |
-| D6 | Alimentación módulo EC (high-side) | P-MOSFET/load switch; no MOSFET N en baja lado. |
-| D7 | Buzzer | Activo 5 V; transistor si consume >20 mA. |
-| D8 | LED de alarma | 330 Ω. |
-| D9 | Flotador nivel bajo (opcional/recomendado) | NC al lazo de seguridad; NO a GND para el Arduino. Abre al bajar. |
-| D10 | Flotador nivel alto (opcional/recomendado) | NC al lazo de seguridad; NO a GND para el Arduino. Abre al subir. En mesa/canal. |
+| D30 | HC-SR04 Sensor Ultrasonido TRIG | Directo. |
+| D31 | HC-SR04 Sensor Ultrasonido ECHO | 1 kΩ serie opcional; 100 pF a GND si el cable es largo. |
+| D6 | DS18B20 DATA | Pull-up 4,7 kΩ a 5 V. |
+| D2 | Relé IN | 10 kΩ a 5 V si es activo bajo; a GND si es activo alto. | |
 | D20 | LCD SDA | I2C. |
 | D21 | LCD SCL | I2C. |
 | A0 | EC/TDS OUT | 1 kΩ serie + 100 nF a GND. Referencia 2,56 V o 5 V según módulo. |
 | A1 | Reserva analógica | Libre. |
 | A2 | Reserva | Libre al usar DS18B20. |
-| D22 | Botón de reset de falla | A GND con pull-up; 2 s de pulsación. |
-| D23 | Flow switch | Opcional, recomendado. |
-| D24 | Segundo relé | Opcional para relleno. |
+| D13 | Switch | Opcional, recomendado. |
 
 ## Decisiones críticas
 
